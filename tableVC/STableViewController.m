@@ -24,16 +24,16 @@
     
     // 设置普通状态的动画图片
     NSMutableArray *idleImages = [NSMutableArray array];
-    for (NSUInteger i = 1; i<=60; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"dropdown_anim__000%zd", i]];
+    for (NSUInteger i = 1; i<=7; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"refresh0000%zd", i - 1]];
         [idleImages addObject:image];
     }
 
     
     // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
     NSMutableArray *refreshingImages = [NSMutableArray array];
-    for (NSUInteger i = 1; i<=3; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"dropdown_loading_0%zd", i]];
+    for (NSUInteger i = 1; i<=7; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"refresh0000%zd", i - 1]];
         [refreshingImages addObject:image];
     }
     
